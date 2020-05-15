@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+    <title>HOME PAGE</title>
+{% endblock title %}
+
+
+{% block content %}
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-4">
+                <img src="{% static 'images/stickynotes.jpg' %}" alt="Notes" width="360" height="250" class="rounded-lg shadow">
+            </div>
+            <div class="col-lg-4">
+                <img src="{% static 'images/stickynotes1.jpg' %}" alt="Notes" width="360" height="250" class="rounded-lg shadow">
+            </div>
+            <div class="col-lg-4">
+                <img src="{% static 'images/stickynotes2.jpg' %}" alt="Notes" width="360" height="250" class="rounded-lg shadow">
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-10 offset-md-1">
+                <center>
+                    <p class="h1">Rápido y fácil de usar, donde sea y cuando sea!</p>
+                </center>
+                <center>
+                    <p class="h3 mt-3">Planifica mejor tu día todos los días de la semana.</p>
+                </center>
+                <center>
+                    <p class="h5">TASKMATE te ayuda a organizar tus proyectos de inicio a fin.</p>
+                </center>
+                <br>
+
+                <center>
+                    <a href="{% url 'todolist' %}"><button type="button" class="btn btn-lg btn-primary rounded-lg shadow"> Abrir Aplicación</button></a>
+                </center>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+
