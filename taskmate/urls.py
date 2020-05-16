@@ -7,7 +7,7 @@ urlpatterns = [
 
     path('admin/', admin.site.urls),
     path('', todolist_views.index, name='index'),
-    path('/', todolist_views.index, name='index'),
+    # path('/', todolist_views.index, name='index'),
 
     path('todolist/', include('todolist_app.urls')),
     path('account/', include('users_app.urls')),
